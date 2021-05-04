@@ -1,0 +1,29 @@
+# Zhivaldo Fabio H.
+# 71200608
+
+'''
+Tuple is a list of elements that cannot be changed.
+Silvia ingin membuat sebuah daftar belanjaan
+Silvia meminta cowoknya untuk membuatkan program
+yang bisa membuat daftar belanjaan secara otomatis
+bantu cowok silvia membuat program nya!
+'''
+# input = Belanjaan yang mau dibeli
+# Process = Penambahan Belanjaan
+# Output = Daftar Belanjaan
+
+print ('='*10, 'Daftar Belanjaan', '='*10)
+
+def Tambah(x,z):
+    y = list(x)
+    y.append(z)
+    x = tuple(y)
+    print('Daftar Belanjaan yang mau Dibeli :')
+    for i in x:
+        print (i)
+
+
+daftar = ('Susu', 'Apel', 'Ayam') # ini tuple
+baru = input ('Masukan belanjaan baru :\n>> ')
+Tambah(daftar, baru)
+print(type(daftar))
